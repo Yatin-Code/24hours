@@ -12,6 +12,8 @@ Usage:
 """
 import argparse, sys, time, signal, datetime, os, math
 
+__version__="0.2.0"
+
 ANSI = {"reset": "\033[0m", "bold": "\033[1m", "dim": "\033[2m",
         "red": "\033[31m", "green": "\033[32m", "yellow": "\033[33m",
         "blue": "\033[34m", "magenta": "\033[35m", "cyan": "\033[36m",
@@ -98,6 +100,7 @@ MILESTONES = [0.10, 0.25, 0.50, 0.75, 0.90, 1.00]
 def main(argv=None):
     p = argparse.ArgumentParser(prog="hours", description="countdown + focus timer")
     p.add_argument("deadline", help="relative (+2h30m) or absolute time")
+    p.add_argument("--version", action="version", version="hours %s"%__version__)
     p.add_argument("--focus", default="", help="the one thing to do now")
     p.add_argument("--title", default="", help="label for this run")
     p.add_argument("--interval", type=float, default=1.0, help="refresh seconds")

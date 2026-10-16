@@ -172,6 +172,7 @@
     const elapsed = paused ? (total-pausedRemaining) : (now-(target-total));
     const pctv = Math.min(1, Math.max(0, elapsed/total));
     big.textContent=fmt(remaining);
+    document.title=fmt(remaining)+" · hours";
     pct.textContent=Math.round(pctv*100)+'% elapsed';
     ring.style.strokeDashoffset = CIRC*(1-pctv);
     ring.style.stroke = pctv>=1 ? 'var(--warn)' : 'var(--accent)';
