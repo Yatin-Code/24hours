@@ -9,3 +9,6 @@ __pycache__/
 
 # heartbeat output
 scripts/heartbeat.out
+
+# live, churns every second; snapshot committed only at T_STOP
+seconds.log

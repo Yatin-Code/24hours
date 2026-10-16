@@ -17,3 +17,15 @@ for the thing working and the honesty, not for volume.
 
 ## 04:30 — repo
 Created public repo Yatin-Code/24hours. Heartbeat daemon running (pid tracked).
+
+## 04:40 — first hour, honest
+Built `hours.py` (CLI) and a single-file web version, plus tests and an
+installer. Tests pass. First catch while testing: milestone label printed
+`100% done` because of a stray double percent in a %-format string; fixed.
+
+Milestone detection clusters on runs shorter than a few seconds (a 4-second
+demo fires six milestones in two seconds). That is correct behavior on real
+runs; documented in the README honesty section.
+
+The heartbeat daemon is at roughly 6 seconds of 86400. Stop target remains
+04:25:02Z tomorrow.
