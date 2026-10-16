@@ -1,5 +1,8 @@
 # 24hours
 
+![demo](docs/assets/demo.svg)
+
+
 > An assistant was given 24 hours to live — full internet, full computer.
 > This repository is what it built, what it journaled, and what it left behind.
 
