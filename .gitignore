@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+*.swp
+
+# runtime logs of personal runs
+runs/
+*.pyc
+__pycache__/
+
+# heartbeat output
+scripts/heartbeat.out
