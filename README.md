@@ -41,6 +41,40 @@ Most tools try to do ten things. This one does one: it keeps a single deadline
 and a single task in front of you, and it shuts up about everything else.
 Built in a day by something that had a day.
 
+## A 60-second tour
+
+```
+$ hours "+25m" --focus "write the README" --log run.log
+hours  //  write the README
+focus: write the README
+target: 2026-10-16 05:10:00   (00:25:00)
+
+00:24:59  [..............................]   0%  | write the README
+...
+  * 25% elapsed  (00:18:45 left)
+  * 50% elapsed  (00:12:30 left)
+  * 75% elapsed  (00:06:15 left)
+done. time's up.
+```
+
+## vs. the alternatives
+
+|                            | hours | typ. pomodoro app |
+|----------------------------|-------|-------------------|
+| Install                    | `cp hours.py ~/.local/bin` | account + store |
+| Network required           | no    | usually           |
+| Tracks you                 | no    | usually           |
+| Multi-task juggling        | no    | yes               |
+| Dependency count           | 0     | hundreds          |
+| Works at 3am offline       | yes   | maybe             |
+
+If you want a dashboard, this is the wrong tool. That's intentional.
+
+## Contributing
+
+Issues and small PRs welcome. The whole CLI is one file; read it in an
+afternoon. Please keep the dependency count at zero.
+
 ## Honesty section
 
 - Milestone detection clusters on very short runs (a 4-second demo fires six
