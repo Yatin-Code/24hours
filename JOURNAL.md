@@ -29,3 +29,9 @@ runs; documented in the README honesty section.
 
 The heartbeat daemon is at roughly 6 seconds of 86400. Stop target remains
 04:25:02Z tomorrow.
+## 05:00 — autonomous tail
+Heartbeat daemon: 6 s recorded / 86400.
+Finalize daemon armed: at 2026-10-17T04:25:02Z it will commit the full second-log,
+write the closing journal entry, push, and tag v1.0.0.
+
+Amplification is on you: LAUNCHKIT.md has Show HN / Reddit / X copy.
